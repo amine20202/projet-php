@@ -18,8 +18,8 @@ class article {
     public function __isset($attr) {
         return isset($this->tab[$attr] ); }
         public function __toString (){
-           $s="<tr> <td>$this->tab['reference'] </td> <td>$this->tab['libelle'] </td>
-            <td>$this->tab['quantite']  </td> <td>$this->tab['prix'] </td> </tr> ;"
+           $s="<table><tr> <td>$this->tab['reference'] </td> <td>$this->tab['libelle'] </td>
+            <td>$this->tab['quantite']  </td> <td>$this->tab['prix'] </td> </tr>  </table>;"
             return $s ;
         }
     
